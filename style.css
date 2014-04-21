@@ -32,21 +32,29 @@ nav a:hover {
 }
 
 @media (min-width: 400px) {
-  nav ul:first-child li {
-    display: none;
+  nav ul:last-child, nav ul:first-child {
+    padding: 0;
   }
 
   nav ul:last-child li {
+    display: none;
+  }
+
+  nav ul:first-child li {
     display: inline-block;
   }
 }
 
 @media (min-width: 600px) {
-  nav ul:first-child li {
-    display: inline-block;
+  nav ul:last-child, nav ul:first-child {
+    padding-left: 2em;
   }
 
   nav ul:last-child li {
+    display: inline-block!important;
+  }
+
+  nav ul:first-child li {
     display: none;
   }
 }
